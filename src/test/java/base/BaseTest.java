@@ -20,12 +20,12 @@ public class BaseTest {
         driver=new ChromeDriver(chromeOptions);
         driver.manage().window().maximize();
         driver.navigate().to("https://www.noon.com/");
-        wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait=new WebDriverWait(driver, Duration.ofSeconds(15));
     }
-
+/*
     @AfterClass
     public void tearDown() {
         driver.quit();
-    }
+    }*/
 }
 
