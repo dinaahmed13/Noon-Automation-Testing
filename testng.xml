@@ -2,9 +2,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="Noon Automation Suite">
-    <test name="Browse and Filter Products">
+
+    <test name="Noon Automation Tests">
         <classes>
             <class name="tests.BrowseAndFilterProductsTest"/>
+            <class name="tests.AddMultipleProductsToCartTest"/>
+            <class name="tests.AddMultipleFreeShippingProductsTest"/>
+            <class name="tests.InvalidSearchTest"/>
         </classes>
     </test>
+
 </suite>
