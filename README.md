@@ -8,6 +8,12 @@ The framework automates essential product-shopping workflows, including product 
 
 It follows a Page Object Model (POM) structure and uses external test data to support maintainable, reusable, and data-driven test execution. It also supports browser selection through TestNG configuration and generates test execution reports using Allure.
 
+## Project Demo
+
+**Test Execution Recording:** [Watch the Automation Demo](https://drive.google.com/file/d/1pQKOQy38bsYEslyzmh_CSxG-0HzJv_2e/view?usp=sharing)
+
+The recording should demonstrate the automated test execution and the resulting behavior of the test suite.
+
 ## Key Features
 
 - **Page Object Model (POM):** Separates page interactions from test logic.
@@ -308,11 +314,6 @@ The test suite is designed to validate the following behaviors:
 
 Actual outcomes depend on the current website behavior, test data, browser configuration, and execution environment.
 
-## Project Demo
-
-**Test Execution Recording:** [Watch the Automation Demo](https://drive.google.com/file/d/1pQKOQy38bsYEslyzmh_CSxG-0HzJv_2e/view?usp=sharing)
-
-The recording should demonstrate the automated test execution and the resulting behavior of the test suite.
 
 ## GitHub Repository
 
