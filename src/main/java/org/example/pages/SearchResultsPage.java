@@ -16,6 +16,7 @@ public class SearchResultsPage extends BasePage {
     private static final Logger log = LogManager.getLogger(SearchResultsPage.class);
     private final By searchBox = By.id("search-input");
     private final By productsLocator = By.cssSelector("div[data-qa='plp-product-box']");
+    //private final By nameLocator = By.cssSelector("h2[data-qa='plp-product-box-name']");
     private final By priceLocator = By.cssSelector("div[class*='sellingPrice'] strong[class*='amount']");
     private final By addToCartLocator = By.cssSelector("button[class*='atcCta']");
     private final By freeShippingLocator = By.xpath(".//div[contains(@class,'nudgeText') and normalize-space()='توصيل مجاني']");
@@ -26,12 +27,13 @@ public class SearchResultsPage extends BasePage {
     }
 
     public void enterSearchKeyword(String keyword) {
-        WebElement search = wait.until(ExpectedConditions.elementToBeClickable(searchBox));
+        WebElement search = wait.until(ExpectedConditions.visibilityOfElementLocated(searchBox));
+        search.click();
         search.clear();
         search.sendKeys(keyword);
     }
     public void submitSearch() {
-        WebElement search = wait.until(ExpectedConditions.elementToBeClickable(searchBox));
+        WebElement search = wait.until(ExpectedConditions.visibilityOfElementLocated(searchBox));
         search.sendKeys(Keys.ENTER);
     }
     public void waitForSearchResults() {
@@ -44,9 +46,8 @@ public class SearchResultsPage extends BasePage {
     }
 
     public List<WebElement> getProducts() {
-        return driver.findElements(productsLocator);
+        return findElements(productsLocator);
     }
-
     public String getProductName(WebElement product) {
         return product.findElement(nameLocator)
                 .getAttribute("title")
