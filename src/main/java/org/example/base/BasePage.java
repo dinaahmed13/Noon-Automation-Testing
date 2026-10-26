@@ -28,10 +28,9 @@ public class BasePage {
         return driver.findElement(locator);
     }
     public List<WebElement> findElements(By locator) {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
         return driver.findElements(locator);
     }
-
     public void clickWhenClickable(By locator) {
          wait = new WebDriverWait(
                 driver, Duration.ofSeconds(60)
