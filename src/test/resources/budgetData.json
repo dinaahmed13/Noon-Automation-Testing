@@ -1,0 +1,6 @@
+{
+  "budget": 7500.0,
+  "minTotalPercentage": 0.95,
+  "maxTotalPercentage": 1.05,
+  "minProducts": 4
+}
