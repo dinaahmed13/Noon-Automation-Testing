@@ -15,4 +15,11 @@ public class SearchDataProvider {
                 {"Video Games"}
         };
     }
+    @DataProvider(name = "searchAndBrowserScenarios")
+    public static Object[][] searchAndBrowserScenarios() {
+
+        return new Object[][] {
+                {"Headphones", "chrome"}
+        };
+    }
 }
