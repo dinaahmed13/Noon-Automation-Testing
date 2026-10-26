@@ -3,23 +3,17 @@ package data;
 import org.testng.annotations.DataProvider;
 
 public class SearchDataProvider {
-    @DataProvider(name = "searchScenarios")
-    public static Object[][] searchScenarios() {
-        return new Object[][] {
-                {"Headphones"}
-        };
-    }
-    @DataProvider(name = "antherSearchScenarios")
-    public static Object[][] antherSearchScenarios() {
-        return new Object[][] {
-                {"Video Games"}
-        };
-    }
     @DataProvider(name = "searchAndBrowserScenarios")
     public static Object[][] searchAndBrowserScenarios() {
 
         return new Object[][] {
                 {"Headphones", "chrome"}
+        };
+    }
+    @DataProvider(name = "freeShippingSearchAndBrowserScenarios")
+    public static Object[][] freeShippingSearchAndBrowserScenarios() {
+        return new Object[][] {
+                {"Video Games", "chrome"}
         };
     }
 }
